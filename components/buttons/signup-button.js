@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 export const SignupButton = () => {
   return (
-    <a className="button__sign-up" href="/api/auth/signup">
-      Sign Up
-    </a>
+    <Link legacyBehavior href="/api/auth/signup">
+      <a className="button__sign-up">Sign Up</a>
+    </Link>
   );
 };

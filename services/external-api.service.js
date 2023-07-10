@@ -1,4 +1,4 @@
-import axios, { isAxiosError } from "axios";
+import axios, { isAxiosError } from 'axios';
 
 export const callExternalApi = async (options) => {
   try {
@@ -15,7 +15,7 @@ export const callExternalApi = async (options) => {
       const { response } = error;
 
       const status = response && response.status ? response.status : 500;
-      let message = "http request failed";
+      let message = 'http request failed';
 
       if (response && response.statusText) {
         message = response.statusText;

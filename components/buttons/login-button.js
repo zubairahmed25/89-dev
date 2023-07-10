@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 export const LoginButton = () => {
   return (
-    <a className="button__login" href="/api/auth/login">
-      Log In
-    </a>
+    <Link legacyBehavior href="/api/auth/login">
+      <a className="button__login">Log In</a>
+    </Link>
   );
 };
